@@ -1,0 +1,15 @@
+= update_peco
+
+Update peco
+
+== Install
+
+[source,shell]
+----
+fisher add github.com/mimikun/update_peco
+----
+
+== Require
+
+* peco
+
