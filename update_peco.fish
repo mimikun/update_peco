@@ -5,6 +5,7 @@ function update_peco --description 'Update peco'
         set VERSION (curl --silent https://api.github.com/repos/peco/peco/releases/latest | jq .tag_name -r)
         set DESTINATION /usr/local/bin/peco
         if test $OLD_VERSION != $VERSION
+            echo "Update found!"
             set CURRENTDIR (pwd)
             cd /tmp && wget https://github.com/peco/peco/releases/download/$VERSION/peco_linux_amd64.tar.gz
             sleep 5
