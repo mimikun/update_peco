@@ -6,10 +6,10 @@ Update peco
 
 [source,shell]
 ----
-fisher add github.com/mimikun/update_peco
+fisher install mimikun/update_peco
 ----
 
 == Require
 
 * peco
-
+* https://github.com/mimikun/read_confirm[read_confirm]
