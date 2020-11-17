@@ -1,5 +1,5 @@
 function update_peco --description 'Update peco'
-    echo "Update peco"
+    echo "Update peco?"
     if read_confirm
         set OLD_VERSION (peco --version | cut -d ' ' -f 3)
         set VERSION (curl --silent https://api.github.com/repos/peco/peco/releases/latest | jq .tag_name -r)
